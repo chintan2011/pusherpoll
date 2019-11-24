@@ -4,51 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Voting App</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Team Building Activities</h1>
-        <p>Vote for your favourite team building activity</p>
-        <form id="vote-form">
-                <p>
-                        <input type="radio" name="activity" id="casino" value="Casino">
-                        <label for="casino">Casino</label>
-                    </p>
+        <div class="container">
+                <h1>Team Building Activities</h1>
+                <p>Vote for your favourite team building activity</p>
+                <form id="vote-form">
+                        <p>
+                                <label class="container" for="casino">Casino
+                                        <input type="radio"name="activity" id="casino" value="Casino" checked>
+                                        <span class="checkmark"></span>
+                                </label>
+                        </p>
         
-                    <p>
-                            <input type="radio" name="activity" id="shooting" value="Shooting">
-                            <label for="shooting">Shooting Range</label>
-                        </p>
                         <p>
-                            <input type="radio" name="activity" id="walk" value="Walk">
-                            <label for="walk">Walk in the Park</label>
+                                <label class="container" for="shooting">Shooting Range
+                                        <input type="radio"name="activity" id="shooting" value="Shooting">
+                                        <span class="checkmark"></span>
+                                </label>
                         </p>
+        
                         <p>
-                                <input type="radio" name="activity" id="gocart" value="Go_Cart" checked>
-                                <label for="gocart">Go_Cart</label>
+                                <label class="container" for="walk">Walk in the Park
+                                        <input type="radio"name="activity" id="walk" value="walk">
+                                        <span class="checkmark"></span>
+                                </label>
                         </p>
+        
                         <p>
-                                <input type="radio" name="activity" id="archery" value="ArcheryTag">
-                                <label for="archery">ArcheryTag</label>
+                                <label class="container" for="gocart">GoCart
+                                        <input type="radio"name="activity" id="gocart" value="Go_Cart">
+                                        <span class="checkmark"></span>
+                                </label>
                         </p>
-            
+                        
                         <p>
-                                <input type="radio" name="activity" id="lazer" value="LazerTag">
-                                <label for="lazer">LazerTag</label>
+                                <label class="container" for="archery">ArcheryTag
+                                        <input type="radio"name="activity" id="archery" value="ArcheryTag">
+                                        <span class="checkmark"></span>
+                                </label>
                         </p>
-            
+        
                         <p>
-                                <input type="radio" name="activity" id="escape" value="EscapeRoom">
-                                <label for="escape">EscapeRoom</label>
-                        </p>
-            
-            <input type="submit" value="Vote" class="btn">               
-        </form>
-        <br><br>
-
-    <div id="chartContainer" style="height: 300px;width:100%"></div>
+                                <label class="container" for="lazer">LazerTag
+                                        <input type="radio"name="activity" id="lazer" value="LazerTag">
+                                        <span class="checkmark"></span>
+                                </label>
+                        </p>    
+                    
+                        <p>
+                                <label class="container" for="escape">EscapeRoom
+                                        <input type="radio"name="activity" id="escape" value="EscapeRoom">
+                                        <span class="checkmark"></span>
+                                </label>
+                        </p>         
+                    <button class="button">Vote</button>
+                    <br><br>
+                </form>
+                <br><br>
+                
+                <div id="chartContainer" style="height: 300px;width: 100%"></div>
 
     </div>
     <script
