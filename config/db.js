@@ -4,6 +4,6 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // db connect
-mongoose.connect('mongodb+srv://chintan:chintan@cluster0-88sin.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect(/* add your mongoose connection here */)
 .then(() => console.log('MongooseDB Connection'))
 .catch(err => console.log(err));
